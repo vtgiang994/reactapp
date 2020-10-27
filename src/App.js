@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import React, {useState} from 'react';
 import './App.css';
-import Header from "./Learning";
-import Content from "./Learning";
+import PrimarySearchAppBar from "./Learning";
+import DisableElevation from './content';
 
 
 function App() {
 
     return (
         <div className="App">
-            <Header />
-            <Content />
+            <PrimarySearchAppBar />
+            <DisableElevation />
         </div>
+
     );
 }
 

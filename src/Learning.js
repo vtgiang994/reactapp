@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row, Col, Button} from 'react-bootstrap'
 import {fade, makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -12,13 +11,11 @@ import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-//App Bar with a primary search field
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
@@ -135,14 +132,7 @@ export default function PrimarySearchAppBar() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
-            {/*<MenuItem>*/}
-            {/*    <IconButton aria-label="show 4 new mails" color="inherit">*/}
-            {/*        <Badge badgeContent={4} color="secondary">*/}
-            {/*            <MailIcon/>*/}
-            {/*        </Badge>*/}
-            {/*    </IconButton>*/}
-            {/*    <p>Messages</p>*/}
-            {/*</MenuItem>*/}
+
             <MenuItem>
                 <IconButton aria-label="show 11 new notifications" color="inherit">
                     <Badge badgeContent={11} color="secondary">
@@ -203,11 +193,7 @@ export default function PrimarySearchAppBar() {
                     </div>
                     <div className={classes.grow}/>
                     <div className={classes.sectionDesktop}>
-                        {/*<IconButton aria-label="show 4 new mails" color="inherit">*/}
-                        {/*    <Badge badgeContent={4} color="secondary">*/}
-                        {/*        <MailIcon/>*/}
-                        {/*    </Badge>*/}
-                        {/*</IconButton>*/}
+
                         <IconButton aria-label="show 17 new notifications" color="inherit">
                             <Badge badgeContent={1} color="secondary">
                                 <NotificationsNoneOutlinedIcon/>

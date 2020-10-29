@@ -1,17 +1,19 @@
-import logo from './logo.svg';
 import React, {useState} from 'react';
 import './App.css';
 import PrimarySearchAppBar from "./Learning";
-import DisableElevation from './content';
-
+import ContentMessage from "./content";
+import IconLogo from './Iconlogo';
+import ButtonSearch from "./Search";
 
 function App() {
 
     return (
-        <div className="App">
-            <PrimarySearchAppBar />
-            <DisableElevation />
-        </div>
+        <section className="App">
+            {/*<PrimarySearchAppBar/>*/}
+            {/*<ContentMessage/>*/}
+            <IconLogo/>
+            <ButtonSearch />
+        </section>
 
     );
 }

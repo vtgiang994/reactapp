@@ -1,32 +1,23 @@
 import React from "react";
+import SidebarLeft from "./Sidebarleft";
+import MessageList from "./Messagelist";
+import MessageContent from "./Messagecontent";
+import SidebarRight from "./Sidebarright";
+
 
 function Content() {
-    return(
+    return (
         <section>
             <div className={"container-fluid"}>
                 <div className={"row"}>
-                    <div className={"col sidebarLeft"}>
-                        <div>
-                            <button>
-                                Write Message
-                            </button>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Inbox</li>
-                                <li>Starred</li>
-                                <li>Send</li>
-                                <li>Draft</li>
-                                <li>Spam</li>
-                                <li>Trash</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className={"col messageList"}>
-
-                    </div>
-                    <div className={"col messageContent"}></div>
-                    <div className={"col sidebarRight"}></div>
+                    {/*sidebar left*/}
+                    <SidebarLeft/>
+                    {/*message list*/}
+                    <MessageList/>
+                    {/*message content*/}
+                    <MessageContent/>
+                    {/*sidebar right*/}
+                    <SidebarRight />
                 </div>
 
             </div>
@@ -34,4 +25,5 @@ function Content() {
 
     );
 }
+
 export default Content;

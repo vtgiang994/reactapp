@@ -1,26 +1,21 @@
 import React from "react";
-
+import LogoHeader from "./Logoheader";
+import InputSearch from "./Inputsearch";
+import IconsHeader from "./Iconsheader";
 
 
 function Header() {
-    return(
+    return (
         <section>
-            <div className={container-fluid}>
-                <div className={row}>
-                    <div className={col}>
-                        logo
-                    </div>
-                    <div className={col}>
-                        <form>
-                            <input type={text} value={}/>
-                        </form>
-                    </div>
-                    <div className={col}>
-                        icon
-                    </div>
+            <div className={"container-fluid"}>
+                <div className={"row"}>
+                    <LogoHeader/>
+                    <InputSearch/>
+                    <IconsHeader />
                 </div>
             </div>
         </section>
     );
 }
+
 export default Header;

@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
 import './App.css';
-import PrimarySearchAppBar from "./Learning";
-import ContentMessage from "./content";
-import IconLogo from './Iconlogo';
-import ButtonSearch from "./Search";
+import Header from "./Header";
+import Content from "./Contentmess";
+
+
+
+
 
 function App() {
 
     return (
         <section className="App">
-            {/*<PrimarySearchAppBar/>*/}
-            {/*<ContentMessage/>*/}
-            <IconLogo/>
-            <ButtonSearch />
+           <Header />
+           <Content />
         </section>
 
     );

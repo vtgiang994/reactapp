@@ -1,24 +1,23 @@
 import React from "react";
 
 function ListSidebar() {
-    return(
+    return (
         <div>
             <ul>
                 <li>
                     <span>Icon</span>
                     <span>Inbox</span>
+                    <span>102</span>
                 </li>
                 <li>Starred</li>
                 <li>Send</li>
                 <li>Draft</li>
                 <li>Spam</li>
                 <li>Trash</li>
-
-
-
             </ul>
         </div>
 
     );
 }
+
 export default ListSidebar;

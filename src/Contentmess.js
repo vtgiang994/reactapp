@@ -4,10 +4,12 @@ import MessageList from "./Messagelist";
 import MessageContent from "./Messagecontent";
 import SidebarRight from "./Sidebarright";
 
-
+const contentStyle = {
+  marginTop: '0'
+};
 function Content() {
     return (
-        <section>
+        <section style={contentStyle}>
             <div className={"container-fluid"}>
                 <div className={"row"}>
                     {/*sidebar left*/}

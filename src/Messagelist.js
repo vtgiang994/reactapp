@@ -1,30 +1,16 @@
 import React from "react";
+import Primary from "./Primary";
+import ListMess from "./Listmess";
 
+const listStyle = {
+    borderRight: '1px #E6E6E6 solid'
+};
 function MessageList() {
     return (
-        <div className={"col messageList"}>
-            <div>
-                <div className={"row"}>
-                    <div className={"col-3"}>
-                        <select name="" id="">
-                            <option value="volvo">Primary</option>
-                            <option value="saab">Item</option>
-                            <option value="opel">Item</option>
-                            <option value="audi">Item</option>
-                        </select>
-                    </div>
-                    <div className={"col"}>
-                        icon reply
-                    </div>
-                </div>
-                <div className={"messageList"}>
-                    <div>
-                        <img src={""}/>
-                        <p>abcxyz</p>
-                        <p>abcxyz</p>
-                    </div>
-
-                </div>
+        <div className={"col-3"} style={listStyle}>
+            <div >
+                <Primary />
+                <ListMess />
             </div>
         </div>
     );

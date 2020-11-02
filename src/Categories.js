@@ -10,6 +10,10 @@ function Categories() {
                 <option value="opel">Item</option>
                 <option value="audi">Item</option>
             </select>
+            <div className={""}>
+                <img src={""} alt={"img"}/>
+                <p>jennie</p>
+            </div>
         </div>
     );
 }

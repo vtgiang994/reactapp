@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Header";
 import Content from "./Contentmess";
 import Test from "./Test";
-
+import "../node_modules/font-awesome/css/font-awesome.css";
 
 
 

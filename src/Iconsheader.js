@@ -2,15 +2,13 @@ import React from "react";
 
 
 const iconStyle = {
-    display: 'flex',
-    justifyContent: 'end',
-    marginTop: '10px'
-    // alignItems: 'end'
+    textAlign: 'right'
 };
 function IconsHeader() {
     return(
         <div className={"col-7"} style={iconStyle}>
-            icon
+            <i className={"fa fa-bell-o"}></i>
+            <i className={"fa fa-bell-o"}></i>
         </div>
     );
 }

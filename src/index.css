@@ -16,8 +16,62 @@ code {
 ul {
   list-style: none;
 }
+/*message content*/
+.styleH3 {
+  text-align: left;
+}
+.testHover {
+  width: 275px;
+  height: 100px;
+  border-radius: 15px;
+}
+.testHover:hover {
+  background: #2E64FE;
+  color: white;
+  width: 275px;
+  height: 100px;
+  border-radius: 15px;
+}
+.liHover:hover {
+  border-left: 4px solid #2E64FE;
+  color: #2E64FE;
+  border-radius: 0;
+}
+.textP {
+  text-align: left;
+}
+.borderImg {
+  border:1px solid black;
 
+  width:100px;
+  height:100px;
+  border-radius:10px;
+}
+.list-group-item {
+  background: #fafafa;
+  border: none;
+}
+.dateTime {
+  margin-top: 15px;
+  border-bottom: 1px #E6E6E6 solid;
+  height: 40px;
+}
+.sidebarRight {
+  border-left: 1px #E6E6E6 solid;
+}
 /*header*/
 input {
   border-radius: 5px;
+  border: 1px #BDBDBD solid;
+}
+
+.logo {
+  text-align: left;
+  padding-top: 13px;
+}
+.iconLogo {
+  padding-left: 10px;
+}
+.colorLogo {
+  color: #2E64FE;
 }

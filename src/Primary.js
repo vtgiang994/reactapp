@@ -12,11 +12,13 @@ const selectStyle  = {
     background: 'white',
     fontSize: '12px'
 };
-
+const leftStyle = {
+  textAlign: 'left'
+};
 function Primary() {
     return(
         <div className={"row"} style={primaryStyle}>
-            <div className={"col"}>
+            <div className={"col-10"} style={leftStyle}>
                 <select name="" id="" style={selectStyle}>
                     <option value="volvo">Primary</option>
                     <option value="saab">Item</option>
@@ -25,7 +27,7 @@ function Primary() {
                 </select>
             </div>
             <div className={"col"}>
-                icon reply
+                <i className={"fa fa-repeat"}></i>
             </div>
         </div>
     );

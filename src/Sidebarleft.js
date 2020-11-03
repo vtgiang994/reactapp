@@ -9,7 +9,7 @@ const sidebarStyle = {
 };
 function SidebarLeft() {
     return(
-        <div className={"col-2 sidebarLeft"} style={sidebarStyle}>
+        <div className={"col-2 sidebarLeft px-0"} style={sidebarStyle}>
             {/*write message*/}
             <WriteMessage />
             {/*list sidebar left*/}

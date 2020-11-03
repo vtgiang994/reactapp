@@ -33,9 +33,14 @@ ul {
   border-radius: 15px;
 }
 .liHover:hover {
+
+}
+.list-sidebar li:hover, .list-sidebar li.active {
   border-left: 4px solid #2E64FE;
   color: #2E64FE;
   border-radius: 0;
+  background-color: #fff!important;
+  border-color: none!important;
 }
 .textP {
   text-align: left;
@@ -74,4 +79,12 @@ input {
 }
 .colorLogo {
   color: #2E64FE;
+}
+
+.photosList {
+  padding: 10px;
+}
+.photosList img {
+  padding: 5px;
+  width: 100%;
 }

@@ -6,7 +6,7 @@ const iconStyle = {
 };
 function IconsHeader() {
     return(
-        <div className={"col-7"} style={iconStyle}>
+        <div className={"col-3"} style={iconStyle}>
             <i className={"fa fa-bell-o"}></i>
             <i className={"fa fa-bell-o"}></i>
         </div>

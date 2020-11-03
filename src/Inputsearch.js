@@ -2,31 +2,30 @@ import React from "react";
 
 
 const inputDivStyle = {
-
     marginTop: '10px',
-
-
-    position: 'relative'
+    position: 'relative',
+    width: '200px'
 };
 const inputStyle = {
     background: '#FAFAFA',
     fontSize: '12px',
-    padding: '5px 40px'
+    padding: '5px 40px',
+
 };
 const iconStyle = {
   position: 'absolute',
     top: '8px',
-    left: '10px'
+    left: '15px'
 };
 const iconStyle2 = {
     position: 'absolute',
     top: '8px',
-    right:'10px',
+    right:'5px',
     border: 'none'
 }
 function InputSearch() {
     return (
-        <div className={"col-3 search"}>
+        <div className={"col-7 search"}>
 
             <form>
                 <div style={inputDivStyle}>

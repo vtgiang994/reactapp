@@ -1,56 +1,62 @@
 import React from "react";
 
-
-
 const spanStyle = {
-    padding: '10px'
+    padding: "10px",
 };
 const ulStyle = {
-    margin: '0',
-    padding: '0'
+    margin: "0",
+    padding: "0",
 };
 const liStyle = {
-    textAlign: 'left'
-}
+    textAlign: "left",
+};
 
-function ListSidebar() {
+const menuItem1 = {
+    icon: "fa fa-inbox",
+    title: "Inbox",
+    quantity: "102",
+};
+const menuItem2 = {
+    icon: "fa fa-star-o",
+    title: "Starred",
+    quantity: "10",
+};
+
+function ListSidebar(props) {
+    let menuItems2 = props.data;
+    console.log("props of ListSideBar==> ",props);
     return (
         <div>
             <ul style={ulStyle} className={"list-group list-sidebar"}>
-                <li style={liStyle} className={"list-group-item active"}>
-                    <i class={"fa fa-inbox"}></i>
-                    <span style={spanStyle}>Inbox</span>
-                    <span className="badge badge-danger">102</span>
-                </li>
-                <li style={liStyle} className={"list-group-item"}>
-                    <i className={"fa fa-star-o"}></i>
-                    <span style={spanStyle}>Starred</span>
-                    {/*<span>102</span>*/}
-                </li>
-                <li style={liStyle} className={"list-group-item"}>
-                    <i className={"fa fa-paper-plane-o"}></i>
-                    <span style={spanStyle}>Send</span>
-                    {/*<span>102</span>*/}
-                </li>
-                <li style={liStyle} className={"list-group-item"}>
-                    <i className={"fa fa-file-o"}></i>
-                    <span style={spanStyle}>Draft</span>
-                    {/*<span>102</span>*/}
-                </li>
-                <li style={liStyle} className={"list-group-item"}>
-                    <i className={"fa fa-exclamation-circle"}></i>
-                    <span style={spanStyle}>Spam</span>
-                    {/*<span>102</span>*/}
-                </li>
-                <li style={liStyle} className={"list-group-item"}>
-                    <i className={"fa fa-trash"}></i>
-                    <span style={spanStyle}>Trash</span>
-                    {/*<span>102</span>*/}
-                </li>
+                {menuItems2.map((menuItem, index) => {
+                    return (
+                        // <MenuItem propIcon={menuItem.icon} propTitle={menuItem.title} propQuantity={menuItem.quantity} />
+                        <MenuItem data={menuItem} />
+                    );
+                })}
             </ul>
         </div>
-
     );
+}
+
+function MenuItem(props) {
+    console.log("menu item props =>>>>",props);
+    let liClass = "list-group-item";
+    if (props.data.isActive) {
+        liClass = "list-group-item active";
+    }
+    return (
+        <li
+                            style={liStyle}
+                            className={liClass}
+                        >
+                            <i className={props.data.icon}></i>
+                            <span style={spanStyle}>{props.data.title}</span>
+                            <span className="badge badge-danger">
+                                {props.data.quantity}
+                            </span>
+                        </li>
+    )
 }
 
 export default ListSidebar;

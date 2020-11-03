@@ -10,6 +10,7 @@ import "../node_modules/font-awesome/css/font-awesome.css";
 const appStyle = {
   fontSize: '14px'
 };
+
 function App() {
     return (
         <section className="App" style={appStyle}>

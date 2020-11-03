@@ -1,17 +1,26 @@
-import logo from './logo.svg';
 import React, {useState} from 'react';
 import './App.css';
-import Header from "./Learning";
-import Content from "./Learning";
+import Header from "./Header";
+import Content from "./Contentmess";
+import Test from "./Test";
+import "../node_modules/font-awesome/css/font-awesome.css";
 
 
+
+const appStyle = {
+  fontSize: '14px'
+};
 function App() {
-
     return (
-        <div className="App">
-            <Header />
-            <Content />
-        </div>
+        <section className="App" style={appStyle}>
+            <div className={"container"}>
+                <Header />
+                <Content />
+                {/*<Test />*/}
+            </div>
+
+        </section>
+
     );
 }
 

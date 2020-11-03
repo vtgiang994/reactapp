@@ -1,50 +1,86 @@
 import React from "react";
-// const activeStyle = {
-//     border: '1px solid black',
-//     backgroundColor: '#2E64FE',
-//     width: '275px',
-//     height: '100px',
-//     borderRadius: '20px',
-//     color: 'white'
-// };
+import image from "./Capture.PNG";
+
+const imgStyle = {
+    borderRadius: '50%',
+    border: '1px white solid',
+    width: '30px',
+    height: '30px',
+    position: 'absolute',
+    left: '10px',
+    top: '6px'
+};
 function ListMess() {
     return (
         <div className={"listMess"}>
             <div className={"row testHover"} >
                 <div className={"col-1"}>
-                    <img src={""} alt={"img"}/>
+                    <img src={image} alt={"img"} style={imgStyle}/>
                 </div>
                 <div className={"col textP"}>
                     <p>
                         Cho vật phẩm thêm điểm
-                    </p>
-                    <p>
+                        <br/>
                         Cho vật phẩm thêm điểm
                     </p>
                 </div>
             </div>
             <div className={"row testHover"}>
                 <div className={"col-1"}>
-                    <img src={""} alt={"img"}/>
+                    <img src={image} alt={"img"} style={imgStyle}/>
                 </div>
                 <div className={"col textP"}>
                     <p>
                         Cho vật phẩm thêm điểm
-                    </p>
-                    <p>
+                        <br/>
                         Cho vật phẩm thêm điểm
                     </p>
                 </div>
             </div>
             <div className={"row testHover"}>
                 <div className={"col-1"}>
-                    <img src={""} alt={"img"}/>
+                    <img src={image} alt={"img"} style={imgStyle}/>
                 </div>
                 <div className={"col textP"}>
                     <p>
                         Cho vật phẩm thêm điểm
+                        <br/>
+                        Cho vật phẩm thêm điểm
                     </p>
+                </div>
+            </div>
+            <div className={"row testHover"}>
+                <div className={"col-1"}>
+                    <img src={image} alt={"img"} style={imgStyle}/>
+                </div>
+                <div className={"col textP"}>
                     <p>
+                        Cho vật phẩm thêm điểm
+                        <br/>
+                        Cho vật phẩm thêm điểm
+                    </p>
+                </div>
+            </div>
+            <div className={"row testHover"}>
+                <div className={"col-1"}>
+                    <img src={image} alt={"img"} style={imgStyle}/>
+                </div>
+                <div className={"col textP"}>
+                    <p>
+                        Cho vật phẩm thêm điểm
+                        <br/>
+                        Cho vật phẩm thêm điểm
+                    </p>
+                </div>
+            </div>
+            <div className={"row testHover"}>
+                <div className={"col-1"}>
+                    <img src={image} alt={"img"} style={imgStyle}/>
+                </div>
+                <div className={"col textP"}>
+                    <p>
+                        Cho vật phẩm thêm điểm
+                        <br/>
                         Cho vật phẩm thêm điểm
                     </p>
                 </div>

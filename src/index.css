@@ -24,6 +24,7 @@ ul {
   width: 275px;
   height: 100px;
   border-radius: 15px;
+  padding-top: 15px;
 }
 .testHover:hover {
   background: #2E64FE;
@@ -35,6 +36,9 @@ ul {
 .liHover:hover {
 
 }
+.listMess {
+  padding-top: 10px;
+}
 .list-sidebar li:hover, .list-sidebar li.active {
   border-left: 4px solid #2E64FE;
   color: #2E64FE;
@@ -42,6 +46,9 @@ ul {
   background-color: #fff!important;
   border-color: none!important;
 }
+/*.backgroundC {*/
+/*  background: white;*/
+/*}*/
 .textP {
   text-align: left;
 }

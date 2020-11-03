@@ -1,10 +1,23 @@
 import React from "react";
 import image from "./Capture.PNG";
 
-
+const divStyle = {
+    position: 'relative',
+    width: '100%'
+}
+const inputStyle = {
+    background: '#FAFAFA',
+    fontSize: '12px',
+    width: '100%'
+}
+const iconInputS = {
+    position: 'absolute',
+    right: '10px',
+    top: '4px'
+}
 const testPosition = {
-  borderRadius: '50%',
-  border: '1px black solid',
+    borderRadius: '50%',
+    border: '1px black solid',
     width: '20px',
     height: '20px',
     position: 'absolute',
@@ -14,7 +27,7 @@ const testPosition = {
 const pPosition = {
     borderRadius: '5px',
     border: '1px black solid',
-    backgroundColor: '#cecece',
+    backgroundColor: '#FAFAFA',
     marginLeft: '20px',
     paddingBottom: '8px',
     paddingTop: '2px',
@@ -26,23 +39,21 @@ const alignLeft = {
 
 };
 const alignRight = {
-  textAlign: 'right',
+    textAlign: 'right',
+    backgroundColor: '#2E64FE',
+    color: 'white',
+    border: 'none'
 };
 const divPosition = {
     position: 'relative',
 }
 const selectS = {
-  width: '100%',
-  height: '40px'
+    width: '100%',
+    height: '40px',
+    border: 'none',
+    background: 'rgb(250, 250, 250)'
 };
-const obj1 = {
-    1: 'a',
-    2: 'b'
-}
-const obj2 = {
-    3: 'c'
-}
-const obj3 = {...obj1}
+
 function Categories() {
     return (
         <div>
@@ -52,17 +63,30 @@ function Categories() {
                 <option value="opel">Item</option>
                 <option value="audi">Item</option>
             </select>
-            <div style={divPosition}>
+            <div className={"backgroundC"}>
+                <div style={divPosition}>
                     <img src={image} alt={"i"} style={testPosition}/>
-                    <p style={{...pPosition, ...alignLeft}}>Tương tự như Rest Params, Spread Operator cũng sử dụng toán tử …</p>
+                    <p style={{...pPosition, ...alignLeft}}>Tương tự như Rest Params</p>
+                </div>
+                <div style={divPosition}>
+
+                    <p style={{...pPosition, ...alignRight}}>jennie Tương tự như Rest Params</p>
+                </div>
+                <div style={divPosition}>
+                    <img src={image} alt={"i"} style={testPosition}/>
+                    <p style={{...pPosition, ...alignLeft}}>jennie</p>
+                </div>
             </div>
-            <div style={divPosition}>
-                {/*<img src={image} alt={"i"} style={testPosition}/>*/}
-                <p style={{...pPosition, ...alignRight}}>jennieTương tự như Rest Params, Spread Operator cũng sử dụng toán tử …</p>
-            </div>
-            <div style={divPosition}>
-                <img src={image} alt={"i"} style={testPosition}/>
-                <p style={pPosition}>jennie</p>
+
+            <div className={"inputMess backgroundC"}>
+                <form>
+                    <div style={divStyle}>
+                        <input type={"text"} value={""} placeholder={"Type Message"} style={inputStyle}/>
+                        <i className={"fa fa-chevron-down"} style={iconInputS}></i>
+                        <i className={"fa fa-chevron-down"} style={iconInputS}></i>
+                    </div>
+
+                </form>
             </div>
         </div>
     );

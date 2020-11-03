@@ -12,6 +12,7 @@ const ulStyle = {
 const liStyle = {
     textAlign: 'left'
 }
+
 function ListSidebar() {
     return (
         <div>

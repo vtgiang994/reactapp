@@ -2,7 +2,8 @@ import React from "react";
 
 
 const iconStyle = {
-    textAlign: 'right'
+    textAlign: 'right',
+    top: '10px'
 };
 function IconsHeader() {
     return(

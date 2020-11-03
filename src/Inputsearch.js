@@ -4,7 +4,7 @@ import React from "react";
 const inputDivStyle = {
     marginTop: '10px',
     position: 'relative',
-    width: '200px'
+    width: '250px'
 };
 const inputStyle = {
     background: '#FAFAFA',
@@ -20,7 +20,7 @@ const iconStyle = {
 const iconStyle2 = {
     position: 'absolute',
     top: '8px',
-    right:'5px',
+    right:'10px',
     border: 'none'
 }
 function InputSearch() {

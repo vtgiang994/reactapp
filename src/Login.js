@@ -1,43 +1,33 @@
 import React from "react";
 
-const buttonStyle = {
-    width: '274.39px',
-    height: '61.38px',
-    borderRadius: '16px',
-    border: 'none',
-    backgroundColor: 'EFF0F6',
-}
-const buttonStyle1 = {
-    width: '274.39px',
-    height: '61.38px',
-    borderRadius: '16px',
-    border: '2px #5F2EEA solid',
-    backgroundColor: '#FCFCFC',
-}
-const buttonStyle2 = {
-    width: '269.32px',
-    height: '61.38px',
-    borderRadius: '16px',
-    border: '2px #5F2EEA solid',
-    backgroundColor: '#5f2eea',
-}
-
 function Login() {
-    return(
+    return (
         <div className={"login"}>
-            <title>Login</title>
-            <input style={buttonStyle}>
-                <span>1</span>
-                <span>2</span>
-            </input>
-            <input style={buttonStyle1}>
-                <span>1</span>
-                <span>2</span>
-            </input>
-            <button style={buttonStyle2}>
-                <p>Login</p>
-            </button>
+            <p>Login</p>
+            <div className={"email"}>
+                <div className={"row"}>
+                    <div className={"icon col"}>icon</div>
+                    <div className={"idEmail col"}>
+                        <p>email</p>
+                        <input/>
+                    </div>
+                </div>
+
+            </div>
+            <div className={"passWord"}>
+                <div className={"row"}>
+                    <div className={"icon col"}>icon</div>
+                    <div className={"pass col"}>
+                        <p>pass word</p>
+                        <input/>
+                    </div>
+                    <div className={"iconsX col"}>x</div>
+                </div>
+
+            </div>
+            <button>Login</button>
         </div>
     );
 }
+
 export default Login;

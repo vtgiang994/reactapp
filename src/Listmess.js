@@ -3,19 +3,25 @@ import image from "./Capture.PNG";
 
 const imgStyle = {
     borderRadius: '50%',
-    border: '1px white solid',
-    width: '30px',
-    height: '30px',
+    border: 'none',
+    width: '28px',
+    height: '28px',
     position: 'absolute',
     left: '10px',
     top: '6px'
 };
+const iconsS = {
+    paddingTop: '40px',
+    textAlign: 'center',
+    color: '#Bdbdbd'
+}
 function ListMess() {
     return (
         <div className={"listMess"}>
             <div className={"row testHover"} >
                 <div className={"col-1"}>
                     <img src={image} alt={"img"} style={imgStyle}/>
+                    <i className={"fa fa-link"} style={iconsS}></i>
                 </div>
                 <div className={"col textP"}>
                     <p>

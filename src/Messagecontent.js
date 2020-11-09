@@ -25,6 +25,9 @@ const imgStyle2 = {
 const iconStyle = {
     textAlign: 'right',
 };
+const iconsS = {
+    paddingRight: '10px'
+}
 const buttonStyle = {
   borderRadius: '7px',
   background: '#2E64FE',
@@ -41,10 +44,10 @@ function MessageContent() {
                         <p className={"textP"}>Today,08:26AM</p>
                     </div>
                     <div className={"col"} style={iconStyle}>
-                        <i className={"fa fa-address-card"}></i>
-                        <i className={"fa fa-address-card"}></i>
-                        <i className={"fa fa-address-card"}></i>
-                        <i className={"fa fa-address-card"}></i>
+                        <i className={"fa fa-address-card"} style={iconsS}></i>
+                        <i className={"fa fa-reply"} style={iconsS}></i>
+                        <i className={"fa fa-trash-o"} style={iconsS}></i>
+                        <i className={"fa fa-address-card"} style={iconsS}></i>
                     </div>
                 </div>
                 <div className={"avatar"}>

@@ -8,13 +8,23 @@ const divStyle = {
 const inputStyle = {
     background: '#FAFAFA',
     fontSize: '12px',
-    width: '100%'
+    width: '100%',
+    padding: '5px 40px',
+    textAlign: 'left'
 }
 const iconInputS = {
     position: 'absolute',
-    right: '10px',
-    top: '4px'
+    right: '25px',
+    top: '7px',
+    color: '#BDBDBD'
 }
+const iconInputS1 = {
+    position: 'absolute',
+    right: '10px',
+    top: '7px',
+    color: '#BDBDBD'
+}
+
 const testPosition = {
     borderRadius: '50%',
     border: '1px black solid',
@@ -36,8 +46,11 @@ const pPosition = {
 }
 const alignLeft = {
     textAlign: 'left',
-
 };
+const alignR = {
+    textAlign: 'right',
+    paddingLeft: '60px'
+}
 const alignRight = {
     textAlign: 'right',
     backgroundColor: '#2E64FE',
@@ -51,18 +64,23 @@ const selectS = {
     width: '100%',
     height: '40px',
     border: 'none',
+    borderBottom: '1px solid rgb(230,230,230)',
     background: 'rgb(250, 250, 250)'
 };
 
 function Categories() {
     return (
-        <div>
-            <select name="" id="" style={selectS}>
-                <option value="volvo">Categories</option>
-                <option value="saab">Item</option>
-                <option value="opel">Item</option>
-                <option value="audi">Item</option>
-            </select>
+        <div className={'categories'}>
+            {/*<select name="" id="" style={selectS} className={'editFocus'}>*/}
+            {/*    <option value="volvo">Categories</option>*/}
+            {/*    <option value="saab">Item</option>*/}
+            {/*    <option value="opel">Item</option>*/}
+            {/*    <option value="audi">Item</option>*/}
+            {/*</select>*/}
+            <button className={"collapsible"}>
+                Categories
+                <i className={"fa fa-chevron-down"} style={alignR}></i>
+            </button>
             <div className={"backgroundC"}>
                 <div style={divPosition}>
                     <img src={image} alt={"i"} style={testPosition}/>
@@ -82,10 +100,9 @@ function Categories() {
                 <form>
                     <div style={divStyle}>
                         <input type={"text"} value={""} placeholder={"Type Message"} style={inputStyle}/>
-                        <i className={"fa fa-chevron-down"} style={iconInputS}></i>
-                        <i className={"fa fa-chevron-down"} style={iconInputS}></i>
+                        <i className={"fa fa-link"} style={iconInputS}></i>
+                        <i className={"fa fa-smile-o"} style={iconInputS1}></i>
                     </div>
-
                 </form>
             </div>
         </div>

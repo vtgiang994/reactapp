@@ -10,17 +10,20 @@ const buttonStyle = {
     background: 'white',
     position: 'relative',
     padding: '5px 5px',
-    width: '100%'
+    width: '100%',
+    border: 'none',
+    boxShadow: '0px 0px 0px 8px #F7F7F7'
 };
 const iconStyle = {
     paddingRight: '10px'
 }
+
 function WriteMessage() {
     return (
         <div style={writeStyle}>
             <button style={buttonStyle}>
                 <i className={"fa fa-pencil-square-o"} style={iconStyle}></i>
-               Write Message
+                Write Message
             </button>
         </div>
     );

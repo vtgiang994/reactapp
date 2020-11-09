@@ -13,7 +13,7 @@ function SidebarRight() {
         <div className={"col sidebarRight"}>
             <div className={"row dateTime"}>
                 <div className={"col"}>
-                    <i className={"fa fa-plus"}></i>
+                    <i className={"fa fa-plus"}></i>photosList
                     <span>Add Widget</span>
                     <i className={"fa fa-plus"}></i>
                     <i className={"fa fa-plus"}></i>
@@ -22,7 +22,7 @@ function SidebarRight() {
             </div>
 
             <div className={"photosList"}>
-                <h5 className={"textP"}>Photos File</h5>
+                <p className={"textP"}>Photos File</p>
                 <div className={"row"}>
                     <div className={"col-6 px-0"}>
                         <img src={image} alt={"image"}/>

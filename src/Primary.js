@@ -15,6 +15,9 @@ const selectStyle  = {
 const leftStyle = {
   textAlign: 'left'
 };
+const iconsSty = {
+    color: '#bdbdbd',
+}
 function Primary() {
     return(
         <div className={"row"} style={primaryStyle}>
@@ -27,7 +30,7 @@ function Primary() {
                 </select>
             </div>
             <div className={"col"}>
-                <i className={"fa fa-repeat"}></i>
+                <i className={"fa fa-repeat"} style={iconsSty}></i>
             </div>
         </div>
     );

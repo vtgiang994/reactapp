@@ -4,11 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Pegasus from "./App";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/*<Pegasus />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

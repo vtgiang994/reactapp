@@ -6,6 +6,8 @@ import Test from "./Test";
 import "../node_modules/font-awesome/css/font-awesome.css";
 import Sale from "./Sale";
 import Login from "./Login";
+import JoinIn from "./Joinin";
+import GroupCheckBox from "./Groupcheckbox";
 
 
 function App() {
@@ -21,7 +23,8 @@ function App() {
                 {/*<Test/>*/}
                 <Login/>
                 <Sale/>
-                {/*<Test2/>*/}
+                <JoinIn/>
+                <GroupCheckBox/>
             </div>
         </section>
     );

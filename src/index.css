@@ -156,24 +156,56 @@ input {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
 }
 
-/*.login p {*/
-/*  font-size: 32px;*/
-/*}*/
+.login .p1 {
+    font-size: 32px;
+    position: absolute;
+    top: 75px;
+    left: 65px
+}
+
 .email {
     background: #EFF0F6;
     width: 274px;
     height: 61px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 142px;
+    left: 65px;
 }
 
+.iconEmail, .iconsX, .iconPass {
+    /*width: 72px;*/
+    /*height: 68px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.idEmail, .pass {
+    text-align: left;
+}
+.idEmail p, .pass p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 .passWord {
     background: #FFFFFF;
     width: 274px;
     height: 61px;
     border-radius: 16px;
     border: 1px solid #5F2EEA;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 65px;
+    top: 235px;
 }
 
 .login .email input {
@@ -192,6 +224,9 @@ input {
     background: #5F2EEA;
     color: #FFFFFF;
     border: none;
+    position: absolute;
+    left: 65px;
+    top: 322px;
 }
 
 /*Sale*/
@@ -200,24 +235,30 @@ input {
     height: 460px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 32px;
+    background: #FFFFFF;
+    padding: 66px 52px;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
 }
 
-/*.sale.card {*/
-/*  width: 709px;*/
-/*  height: 460px;*/
-/*  border-radius: 32px;*/
-/*  background: #FFFFFF;*/
-/*  border: none;*/
-/*}*/
-.sale .p1 {
-    font-size: 48px;
+.textSale {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*left: 54px;*/
+    /*top: 66px;*/
+    text-align: left;
 }
 
 .sale .p2 {
+    font-size: 48px;
+    text-align: left;
+}
+
+.sale .p3 {
     font-size: 24px;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .sale button {
@@ -228,4 +269,74 @@ input {
     color: #5F2EEA;
     border: gray 1px solid;
     background: #FFFFFF;
+
+}
+
+.sale img {
+    /*right: 52px;*/
+    /*top: 66px;*/
+    /*padding-right: 52px;*/
+}
+
+/*Join in*/
+.joinIn {
+    width: 710px;
+    height: 345px;
+    border-radius: 40px;
+    border: none;
+    background: #FFFFFF;
+    position: relative;
+    padding: 76px 50px 60px;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
+}
+
+.joinIn p {
+    font-size: 24px;
+}
+.joinIn .iconRight img {
+    position: absolute;
+    top: 83px;
+    right: 23px;
+}
+.textIcon {}
+
+.joinIn button {
+    background: #5F2EEA;
+    width: 120px;
+    height: 58px;
+    border-radius: 16px;
+    border: none;
+    margin-left: 30px;
+}
+.inputEmail {
+    width: 320px;
+    height: 61px;
+    color: #FCFCFC;
+    border: #D6D8E7 2px solid;
+    border-radius: 16px;
+    background: #FCFCFC;
+    text-align: left;
+    margin-left: 70px;
+}
+.joinIn .inputEmail input {
+    border: none;
+    font-size: 16px;
+}
+.joinIn .inputEmail img {
+    padding: 15px;
+}
+.inputButton {
+    display: flex;
+}
+
+/*Group Check Box*/
+.GroupCheckBox {
+    width: 406px;
+    height: 348px;
+    border-radius: 40px;
+    border: none;
+    background: #FFFFFF;
+    position: relative;
+    /*padding: ;*/
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
 }

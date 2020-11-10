@@ -3,19 +3,24 @@ import image from "./Photos.SVG"
 
 
 function Sale() {
-    return(
-        <div className={"sale card"}>
-            <div className={"row"}>
-                <div className={"col"}>
-                    <p className={"p1"}>Summer Sale</p>
-                    <p className={"p2"}>25% Off Now through sunday for all in-store purchases.</p>
-                    <button>Shop Now</button>
-                </div>
-                <div className={"col"}>
-                    <img src={image}/>
-                </div>
+    return (
+        <div className={"sale"}>
+            {/*<div className={"row"}>*/}
+            <div className={"col textSale"}>
+                <h1 className={"p2"}>
+                    Summer
+                    <br/>
+                    Sale
+                </h1>
+                <p className={"p3"}>25% Off Now <br/>
+                through sunday
+                for all in-store
+                purchases.</p>
+                <button>Shop Now</button>
             </div>
+                <img src={image}/>
         </div>
     );
 }
+
 export default Sale;

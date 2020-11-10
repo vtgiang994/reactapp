@@ -1,28 +1,38 @@
 import React from "react";
+import imgSearch from "./Search.svg"
+import imgEye from "./eye.png"
+import imgClose from "./Close.svg"
 
 function Login() {
     return (
         <div className={"login"}>
-            <p>Login</p>
+            <p className={"p1"}>Login</p>
             <div className={"email"}>
-                <div className={"row"}>
-                    <div className={"icon col"}>icon</div>
-                    <div className={"idEmail col"}>
-                        <p>email</p>
-                        <input/>
+                {/*<div className={"row"}>*/}
+                    <div className={"iconEmail col pr-0"}>
+                        <img src={imgSearch}/>
                     </div>
-                </div>
+                    <div className={"idEmail col"}>
+                        <p>Email</p>
+                        <input type={"text"} name={"email"}/>
+                    </div>
+                <div className={"col"}></div>
+                {/*</div>*/}
 
             </div>
             <div className={"passWord"}>
-                <div className={"row"}>
-                    <div className={"icon col"}>icon</div>
-                    <div className={"pass col"}>
-                        <p>pass word</p>
-                        <input/>
+                {/*<div className={"row"}>*/}
+                    <div className={"iconPass col pr-0"}>
+                        <img src={imgEye}/>
                     </div>
-                    <div className={"iconsX col"}>x</div>
-                </div>
+                    <div className={"pass col"}>
+                        <p>Pass Word</p>
+                        <input type={"password"} name={"psw"}/>
+                    </div>
+                    <div className={"iconsX col pl-0"}>
+                        <img src={imgClose}/>
+                    </div>
+                {/*</div>*/}
 
             </div>
             <button>Login</button>

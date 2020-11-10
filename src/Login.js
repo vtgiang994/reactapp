@@ -6,7 +6,7 @@ import imgClose from "./Close.svg"
 function Login() {
     return (
         <div className={"login"}>
-            <p className={"p1"}>Login</p>
+            <h1 className={"p1"}>Login</h1>
             <div className={"email"}>
                 {/*<div className={"row"}>*/}
                     <div className={"iconEmail col pr-0"}>

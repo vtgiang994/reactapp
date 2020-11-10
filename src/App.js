@@ -13,6 +13,7 @@ import GroupCheckBox from "./Groupcheckbox";
 function App() {
     const appStyle = {
         fontSize: '14px',
+        fontFamily: 'Poppins',
         backgroundColor: '#E5E5E5',
     };
     return (
@@ -29,4 +30,5 @@ function App() {
         </section>
     );
 }
+
 export default App;

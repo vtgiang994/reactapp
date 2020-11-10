@@ -6,7 +6,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
 
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -162,7 +164,7 @@ input {
 }
 
 .login .p1 {
-    font-size: 32px;
+    /*font-size: 32px;*/
     position: absolute;
     top: 75px;
     left: 65px

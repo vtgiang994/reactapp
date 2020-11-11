@@ -1,7 +1,7 @@
 import React from "react";
 import Close from "./Close.svg"
 import Arrow from "./Forward Arrow.png"
-import imgSearch from "./Search.svg";
+import imgMail from "./Mail.svg";
 
 function JoinIn() {
     return (
@@ -15,7 +15,7 @@ function JoinIn() {
             <p>Recieve 15% off your order at checkout and save today!</p>
             <div className={"inputButton"}>
                 <div className={"inputEmail"}>
-                    <img src={imgSearch}/>
+                    <img src={imgMail}/>
                     <input type={"text"} name={"email"} placeholder={"Email Address"}/>
                 </div>
                 <button>

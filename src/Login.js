@@ -1,5 +1,5 @@
 import React from "react";
-import imgSearch from "./Search.svg"
+import imgMail from "./Mail.svg"
 import imgEye from "./eye.png"
 import imgClose from "./Close.svg"
 
@@ -10,7 +10,7 @@ function Login() {
             <div className={"email"}>
                 {/*<div className={"row"}>*/}
                     <div className={"iconEmail col pr-0"}>
-                        <img src={imgSearch}/>
+                        <img src={imgMail}/>
                     </div>
                     <div className={"idEmail col"}>
                         <p>Email</p>

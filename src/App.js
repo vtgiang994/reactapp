@@ -9,6 +9,11 @@ import Login from "./Login";
 import JoinIn from "./Joinin";
 import GroupCheckBox from "./Groupcheckbox";
 import Selected from "./Selected";
+import SearchEmail from "./Searchemail";
+import Watch from "./Watch";
+import SignIn from "./Signin";
+import BoxImage from "./Boximage";
+import WaffleCone from "./Wafflecone";
 
 
 function App() {
@@ -28,6 +33,11 @@ function App() {
                 <JoinIn/>
                 <GroupCheckBox/>
                 <Selected/>
+                <SearchEmail/>
+                <Watch/>
+                <SignIn/>
+                <BoxImage/>
+                <WaffleCone/>
             </div>
         </section>
     );

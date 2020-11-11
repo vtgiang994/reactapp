@@ -359,7 +359,22 @@ input {
     padding-bottom: 45px;
     padding-left: 49px;
 }
-
+.checkBox, .Radio, .toggle {
+    display: flex;
+}
+.checkBox .checkBox1 {
+    padding-right: 49px;
+    padding-top: 10px;
+}
+.Radio .Radio1 {
+    padding: 10px 34px 0 79px;
+}
+.Radio .Radio2 {
+    padding-top: 10px;
+}
+.toggle .toggle2 {
+    padding: 0 63px 0 17px;
+}
 /*Selected*/
 .Selected {
     width: 274px;
@@ -372,7 +387,9 @@ input {
     filter: drop-shadow(3px 3px 3px #BDBDBD);
     font-size: 16px;
 }
-
+.Select {
+    margin: 0 30px 20px;
+}
 .textSelected {
     display: flex;
 }
@@ -392,7 +409,7 @@ input {
 .shareAReply img {
     position: absolute;
     right: 28px;
-    bottom: 406px;
+    bottom: 386px;
 }
 
 .vegetables, .vegetables1 {
@@ -410,7 +427,7 @@ input {
 .vegetables img {
     position: absolute;
     right: 45px;
-    bottom: 350px;
+    bottom: 330px;
 }
 .vegetables1 {
     border: 2px solid #14142B;
@@ -419,7 +436,7 @@ input {
 .vegetables1 img {
     position: absolute;
     right: 45px;
-    bottom: 270px;
+    bottom: 250px;
 }
 .vegetable1Item {
     width: 147px;
@@ -429,14 +446,88 @@ input {
     font-size: 18px;
     margin-top: 15px;
     margin-left: 79px;
+    padding: 25px 52px 25px 25px;
 }
 .vegetable1Item img {
     position: absolute;
     right: 35px;
-    bottom: 235px;
+    bottom: 215px;
 }
 
 /*SearchEmail*/
 .SearchEmail {
-
+    width: 840px;
+    height: 122px;
+    border-radius: 32px;
+    border: none;
+    background: #FFFFFF;
+    position: relative;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
+    font-size: 16px;
+    padding: 29px 23px;
+}
+.SearchEmail .Search {
+    width: 794px;
+    height: 64px;
+    border-radius: 16px;
+    background: #EFF0F6;
+    text-align: left;
+}
+.SearchEmail .Search img {
+    padding: 20px;
+}
+.SearchEmail .Search input {
+    background: #EFF0F6;
+    border: none;
+    color: #14142B;
+    font-size: 16px;
+}
+/*SignIn and BoxImage*/
+.SignIn, .BoxImage, .Watch {
+    width: 375px;
+    height: 124px;
+    border-radius: 32px;
+    background: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
+}
+.SignIn {
+    padding: 31px 22px;
+}
+.SignIn button {
+    width: 153px;
+    height: 61px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+.SignIn .btnSignIn {
+    background: #5F2EEA;
+    color: #F7F7FC;
+    border: none;
+}
+.SignIn .btnLogIn {
+    background: #FFFFFF;
+    color: #5F2EEA;
+    border: 2px #5F2EEA solid;
+    margin-left: 13px;
+}
+/*BoxImage*/
+.BoxImage {
+    padding: 15px;
+}
+.BoxImage img {
+    padding: 10px;
+}
+/*Watch*/
+.Watch {
+    display: flex;
+}
+.Watch button {
+    width: 132px;
+    height: 47px;
+    border-radius: 40px;
+    border: #5F2EEA 2px solid;
+    color: #5F2EEA;
+    background: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 1px;
 }

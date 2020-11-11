@@ -13,18 +13,30 @@ function GroupCheckBox() {
         <div className="GroupCheckBox">
             <div className={"checkBoxRadio"}>
                 <div className={"checkBox"}>
-                    <img src={checkbox1}/>
-                    <img src={checkbox}/>
+                    <div className="checkBox1">
+                        <img src={checkbox1}/>
+                    </div>
+                    <div>
+                        <img src={checkbox}/>
+                    </div>
                 </div>
                 <div className={"Radio"}>
-                    <img src={radio1}/>
-                    <img src={radio}/>
+                    <div className={"Radio1"}>
+                        <img src={radio1}/>
+                    </div>
+                    <div className={"Radio2"}>
+                        <img src={radio}/>
+                    </div>
                 </div>
             </div>
             <div className={"toggleStepper"}>
                 <div className={"toggle"}>
-                    <img src={toggle1}/>
-                    <img src={toggle}/>
+                    <div>
+                        <img src={toggle1}/>
+                    </div>
+                    <div className={"toggle2"}>
+                        <img src={toggle}/>
+                    </div>
                 </div>
                 <img src={stepper}/>
             </div>

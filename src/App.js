@@ -8,6 +8,7 @@ import Sale from "./Sale";
 import Login from "./Login";
 import JoinIn from "./Joinin";
 import GroupCheckBox from "./Groupcheckbox";
+import Selected from "./Selected";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Sale/>
                 <JoinIn/>
                 <GroupCheckBox/>
+                <Selected/>
             </div>
         </section>
     );

@@ -6,9 +6,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 @font-face {
 
 }
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -193,10 +195,12 @@ input {
 .idEmail, .pass {
     text-align: left;
 }
+
 .idEmail p, .pass p {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
 .passWord {
     background: #FFFFFF;
     width: 274px;
@@ -295,12 +299,15 @@ input {
 .joinIn p {
     font-size: 24px;
 }
+
 .joinIn .iconRight img {
     position: absolute;
     top: 83px;
     right: 23px;
 }
-.textIcon {}
+
+.textIcon {
+}
 
 .joinIn button {
     background: #5F2EEA;
@@ -310,6 +317,7 @@ input {
     border: none;
     margin-left: 30px;
 }
+
 .inputEmail {
     width: 320px;
     height: 61px;
@@ -320,13 +328,16 @@ input {
     text-align: left;
     margin-left: 70px;
 }
+
 .joinIn .inputEmail input {
     border: none;
     font-size: 16px;
 }
+
 .joinIn .inputEmail img {
     padding: 15px;
 }
+
 .inputButton {
     display: flex;
 }
@@ -335,10 +346,97 @@ input {
 .GroupCheckBox {
     width: 406px;
     height: 348px;
-    border-radius: 40px;
+    border-radius: 32px;
     border: none;
     background: #FFFFFF;
     position: relative;
-    /*padding: ;*/
+    padding-top: 83px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
+}
+
+.checkBoxRadio, .toggleStepper {
+    display: flex;
+    padding-bottom: 45px;
+    padding-left: 49px;
+}
+
+/*Selected*/
+.Selected {
+    width: 274px;
+    height: 684px;
+    border-radius: 32px;
+    border: none;
+    background: #FFFFFF;
+    position: relative;
+    padding: 70px 24px 10px;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
+    font-size: 16px;
+}
+
+.textSelected {
+    display: flex;
+}
+
+.shareAReply {
+    width: 225px;
+    height: 128px;
+    border-radius: 16px;
+    background: #EFF0F7;
+    text-align: left;
+    color: #A0A3BD;
+    font-size: 16px;
+    padding: 20px 0 0 24px;
+    margin-top: 20px;
+}
+
+.shareAReply img {
+    position: absolute;
+    right: 28px;
+    bottom: 406px;
+}
+
+.vegetables, .vegetables1 {
+    width: 225px;
+    height: 56px;
+    border-radius: 15px;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 24px;
+    margin-top: 20px;
+}
+.vegetables {
+    background: #EFF0F6;
+}
+.vegetables img {
+    position: absolute;
+    right: 45px;
+    bottom: 350px;
+}
+.vegetables1 {
+    border: 2px solid #14142B;
+    background: #F7F7FC;
+}
+.vegetables1 img {
+    position: absolute;
+    right: 45px;
+    bottom: 270px;
+}
+.vegetable1Item {
+    width: 147px;
+    height: 204px;
+    border-radius: 16px;
+    background: #EFF0F6;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 79px;
+}
+.vegetable1Item img {
+    position: absolute;
+    right: 35px;
+    bottom: 235px;
+}
+
+/*SearchEmail*/
+.SearchEmail {
+
 }

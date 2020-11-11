@@ -12,14 +12,20 @@ function GroupCheckBox() {
     return (
         <div className="GroupCheckBox">
             <div className={"checkBoxRadio"}>
-                <img src={checkbox1}/>
-                <img src={checkbox}/>
-                <img src={radio1}/>
-                <img src={radio}/>
+                <div className={"checkBox"}>
+                    <img src={checkbox1}/>
+                    <img src={checkbox}/>
+                </div>
+                <div className={"Radio"}>
+                    <img src={radio1}/>
+                    <img src={radio}/>
+                </div>
             </div>
             <div className={"toggleStepper"}>
-                <img src={toggle1}/>
-                <img src={toggle}/>
+                <div className={"toggle"}>
+                    <img src={toggle1}/>
+                    <img src={toggle}/>
+                </div>
                 <img src={stepper}/>
             </div>
             <img src={slider}/>

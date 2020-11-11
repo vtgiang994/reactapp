@@ -159,14 +159,12 @@ input {
     border-radius: 20px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
 }
-
+.login:focus {
+    border: 2px blue solid;
+}
 .login .p1 {
-    /*font-size: 32px;*/
     position: absolute;
     top: 75px;
     left: 65px
@@ -520,6 +518,7 @@ input {
 /*Watch*/
 .Watch {
     display: flex;
+    padding: 25px 22px 0 45px;
 }
 .Watch button {
     width: 132px;
@@ -530,4 +529,59 @@ input {
     background: #FFFFFF;
     font-size: 16px;
     letter-spacing: 1px;
+}
+.Watch .textWatch {
+    text-align: left;
+    margin-right: 10px;
+}
+.Watch .textWatch span {
+    color: #00BA88;
+    font-size: 18px;
+}
+.Watch .textWatch p {
+    color: #6E7191;
+    font-size: 18px;
+}
+/*WaffleCone*/
+.WaffleCone {
+    width: 406px;
+    height: 500px;
+    border-radius: 32px;
+    background: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px #BDBDBD);
+    text-align: left;
+    padding-top: 80px;
+    position: relative;
+}
+.WaffleCone .imgCream img {
+    margin-left: 11px;
+    margin-bottom: 32px;
+}
+.WaffleCone .textBox {
+    margin-left: 50px;
+}
+.WaffleCone .textBox p {
+    color: #4E4B66;
+    font-size: 16px;
+}
+.WaffleCone .stepper {
+    position: absolute;
+    bottom: -40px;
+    left: 30px;
+}
+.tag {
+    width: 114px;
+    height: 34px;
+    border-radius: 39px;
+    background: #DED3FF;
+    display: flex;
+    padding: 8px 16px;
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    color: #2A00A2;
+    font-size: 13px;
+}
+.tag p {
+    margin-left: 8px;
 }

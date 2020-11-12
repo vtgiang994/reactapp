@@ -5,24 +5,25 @@ import stepper from "./Increment-Stepper.svg";
 
 function WaffleCone() {
     return (
-        <div className={"WaffleCone"}>
-            <div className={"imgCream"}>
-                <img src={Group218}/>
+        <div>
+            <div className={"WaffleCone"}>
+                <div className={"imgCream"}>
+                    <img src={Group218}/>
+                </div>
+                <div className="textBox">
+                    <h1>Waffle Cone</h1>
+                    <p>12-Pack Box</p>
+                </div>
             </div>
-
-            <div className="textBox">
-                <h1>Waffle Cone</h1>
-                <p>12-Pack Box</p>
+            <div className={"stepperTag"}>
+                    <img src={stepper}/>
+                <div className={"tag"}>
+                    <img src={Tag}/>
+                    <p>Dessert</p>
+                </div>
             </div>
-            <div className={"stepper"}>
-                <img src={stepper}/>
-            </div>
-            <div className={"tag"}>
-                <img src={Tag}/>
-                <p>Dessert</p>
-            </div>
-
         </div>
+
     );
 }
 

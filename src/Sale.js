@@ -6,19 +6,16 @@ function Sale() {
     return (
         <div className={"sale"}>
             {/*<div className={"row"}>*/}
-            <div className={"col textSale"}>
+            <div className={"textSale"}>
                 <h1 className={"p2"}>
                     Summer
                     <br/>
                     Sale
                 </h1>
-                <p className={"p3"}>25% Off Now <br/>
-                through sunday
-                for all in-store
-                purchases.</p>
+                <p className={"p3"}>25% Off Now through sunday for all in-store purchases.</p>
                 <button>Shop Now</button>
             </div>
-                <img src={image}/>
+            <img src={image}/>
         </div>
     );
 }

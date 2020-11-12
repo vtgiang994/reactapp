@@ -13,11 +13,13 @@ function Selected() {
                     <p>Selected</p>
                     <img src={ellipse}/>
                 </div>
-                <p>Unselected</p>
+                <div className={"Unselected"}>
+                    <p>Unselected</p>
+                </div>
+
             </div>
-            <div className={"shareAReply"}>
-                <p>Share a reply</p>
-                <img src={vector}/>
+            <div className={"ShareAReply"}>
+                <textarea placeholder={"Share a reply"}></textarea>
             </div>
             <div className={"vegetables"}>
                 <p>Vegetables</p>
@@ -34,6 +36,7 @@ function Selected() {
                 <p>Broccoli</p>
                 <p>Spinach</p>
             </div>
+
         </div>
     );
 }

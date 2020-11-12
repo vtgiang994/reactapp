@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -151,74 +153,94 @@ input {
     position: relative;
 }
 
-/*login*/
+/*testEmail*/
+.testEmail {
+    background: #EFF0F6;
+    width: 274px;
+    height: 61px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.testEmail img {
+    padding: 15px;
+}
+
+.inputTestMail {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.testEmail .inputTestMail input {
+    background: #EFF0F6;
+    border: none;
+}
+/*Page==========*/
+.Page {
+    width: 100%;
+    background: #F7F7FC;
+    padding: 85px 10px 100px 100px;
+    text-align: left;
+}
+.loginSale, .joinInCheckBox, .bottomPage, .boxAndImg {
+    display: flex;
+    margin-top: 70px;
+}
+
+/*login=========*/
 .login {
     width: 405px;
-    height: 460px;
     background: #FFFFFF;
     border-radius: 20px;
-    position: relative;
-    display: flex;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
+    padding: 76px 65px;
+    margin-right: 60px;
 }
-.login:focus {
-    border: 2px blue solid;
+
+.login input:focus {
+    outline: none;
 }
-.login .p1 {
-    position: absolute;
-    top: 75px;
-    left: 65px
+
+.email, .passWord {
+    /*width: 274px;*/
+    height: 61px;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .email {
     background: #EFF0F6;
-    width: 274px;
-    height: 61px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 142px;
-    left: 65px;
-}
-
-.iconEmail, .iconsX, .iconPass {
-    /*width: 72px;*/
-    /*height: 68px;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.idEmail, .pass {
-    text-align: left;
-}
-
-.idEmail p, .pass p {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .passWord {
     background: #FFFFFF;
-    width: 274px;
-    height: 61px;
-    border-radius: 16px;
     border: 1px solid #5F2EEA;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 65px;
-    top: 235px;
 }
 
 .login .email input {
-    border: none;
     background: #EFF0F6;
+    border: none;
 }
 
 .login .passWord input {
     border: none;
+}
+
+.login p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.login img {
+    padding: 15px 10px 15px 15px;
+}
+
+.pass, .idEmail {
+    text-align: left;
+    padding: 10px 0px;
+
 }
 
 .login button {
@@ -228,15 +250,15 @@ input {
     background: #5F2EEA;
     color: #FFFFFF;
     border: none;
-    position: absolute;
-    left: 65px;
-    top: 322px;
+}
+
+.login button:focus {
+    outline: none;
 }
 
 /*Sale*/
 .sale {
     width: 709px;
-    height: 460px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -247,22 +269,16 @@ input {
 }
 
 .textSale {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*left: 54px;*/
-    /*top: 66px;*/
     text-align: left;
+    width: 240px;
 }
 
 .sale .p2 {
     font-size: 48px;
-    text-align: left;
 }
 
 .sale .p3 {
     font-size: 24px;
-    text-align: left;
-    word-wrap: break-word;
 }
 
 .sale button {
@@ -277,21 +293,21 @@ input {
 }
 
 .sale img {
-    /*right: 52px;*/
-    /*top: 66px;*/
-    /*padding-right: 52px;*/
+    margin-left: 80px;
 }
 
 /*Join in*/
 .joinIn {
     width: 710px;
-    height: 345px;
+    /*height: 345px;*/
     border-radius: 40px;
     border: none;
     background: #FFFFFF;
     position: relative;
     padding: 76px 50px 60px;
+    margin-right: 60px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
+    text-align: center;
 }
 
 .joinIn p {
@@ -324,12 +340,13 @@ input {
     border-radius: 16px;
     background: #FCFCFC;
     text-align: left;
-    margin-left: 70px;
+
 }
 
 .joinIn .inputEmail input {
     border: none;
     font-size: 16px;
+    background: #FFFFFF;
 }
 
 .joinIn .inputEmail img {
@@ -338,61 +355,82 @@ input {
 
 .inputButton {
     display: flex;
+    justify-content: center;
+}
+
+.joinIn button:focus, .joinIn input:focus {
+    outline: none;
 }
 
 /*Group Check Box*/
 .GroupCheckBox {
     width: 406px;
-    height: 348px;
+    /*height: 348px;*/
     border-radius: 32px;
     border: none;
     background: #FFFFFF;
     position: relative;
-    padding-top: 83px;
+    padding: 83px 10px 10px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
 }
 
 .checkBoxRadio, .toggleStepper {
     display: flex;
     padding-bottom: 45px;
-    padding-left: 49px;
+    padding-left: 40px;
 }
+
 .checkBox, .Radio, .toggle {
     display: flex;
 }
+
 .checkBox .checkBox1 {
     padding-right: 49px;
     padding-top: 10px;
 }
+
 .Radio .Radio1 {
     padding: 10px 34px 0 79px;
 }
+
 .Radio .Radio2 {
     padding-top: 10px;
 }
+
 .toggle .toggle2 {
     padding: 0 63px 0 17px;
 }
+
 /*Selected*/
 .Selected {
     width: 274px;
-    height: 684px;
+    height: 100%;
     border-radius: 32px;
     border: none;
     background: #FFFFFF;
-    position: relative;
     padding: 70px 24px 10px;
+    margin-right: 60px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
     font-size: 16px;
 }
+
 .Select {
     margin: 0 30px 20px;
 }
+
 .textSelected {
     display: flex;
 }
-
-.shareAReply {
+.textSelected .Select p {
+    color: #14142B;
+    font-size: 16px;
+}
+.textSelected .Unselected p {
+    color: #6E7191;
+    filter: drop-shadow(0px 2px 1px #6E7191);
+font-size: 16px;
+}
+textarea {
     width: 225px;
     height: 128px;
     border-radius: 16px;
@@ -402,15 +440,10 @@ input {
     font-size: 16px;
     padding: 20px 0 0 24px;
     margin-top: 20px;
+    border: none;
 }
 
-.shareAReply img {
-    position: absolute;
-    right: 28px;
-    bottom: 386px;
-}
-
-.vegetables, .vegetables1 {
+.vegetables {
     width: 225px;
     height: 56px;
     border-radius: 15px;
@@ -418,44 +451,60 @@ input {
     padding-top: 16px;
     padding-left: 24px;
     margin-top: 20px;
+    position: relative;
 }
+
+.vegetables1 {
+    width: 225px;
+    /*height: 56px;*/
+    border-radius: 15px;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 24px;
+    margin-top: 20px;
+    position: relative;
+}
+
 .vegetables {
     background: #EFF0F6;
 }
-.vegetables img {
+
+.vegetables img, .vegetables1 img {
     position: absolute;
-    right: 45px;
-    bottom: 330px;
+    right: 30px;
+    bottom: 20px;
 }
+
 .vegetables1 {
     border: 2px solid #14142B;
     background: #F7F7FC;
 }
-.vegetables1 img {
-    position: absolute;
-    right: 45px;
-    bottom: 250px;
-}
+
 .vegetable1Item {
     width: 147px;
-    height: 204px;
+    /*height: 204px;*/
     border-radius: 16px;
     background: #EFF0F6;
     font-size: 18px;
     margin-top: 15px;
-    margin-left: 79px;
-    padding: 25px 52px 25px 25px;
+    margin-left: 75px;
+    padding: 25px 10px 25px 25px;
+    position: relative;
+    /*top: 55px;*/
+    /*right: 0;*/
+    text-align: left;
 }
+
 .vegetable1Item img {
     position: absolute;
-    right: 35px;
-    bottom: 215px;
+    right: 18px;
+    top: -15px;
 }
 
 /*SearchEmail*/
 .SearchEmail {
     width: 840px;
-    height: 122px;
+    /*height: 122px;*/
     border-radius: 32px;
     border: none;
     background: #FFFFFF;
@@ -464,62 +513,80 @@ input {
     font-size: 16px;
     padding: 29px 23px;
 }
+
 .SearchEmail .Search {
     width: 794px;
-    height: 64px;
+    /*height: 64px;*/
     border-radius: 16px;
     background: #EFF0F6;
     text-align: left;
 }
+
 .SearchEmail .Search img {
     padding: 20px;
 }
+
 .SearchEmail .Search input {
     background: #EFF0F6;
     border: none;
     color: #14142B;
     font-size: 16px;
 }
+
 /*SignIn and BoxImage*/
 .SignIn, .BoxImage, .Watch {
     width: 375px;
-    height: 124px;
+    /*height: 124px;*/
     border-radius: 32px;
     background: #FFFFFF;
+    margin-bottom: 66px;
+    margin-right: 60px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
 }
+
 .SignIn {
     padding: 31px 22px;
 }
+
 .SignIn button {
     width: 153px;
     height: 61px;
     border-radius: 16px;
     font-size: 16px;
 }
+
+.SignIn button:focus {
+    outline: none;
+}
+
 .SignIn .btnSignIn {
     background: #5F2EEA;
     color: #F7F7FC;
     border: none;
 }
+
 .SignIn .btnLogIn {
     background: #FFFFFF;
     color: #5F2EEA;
     border: 2px #5F2EEA solid;
     margin-left: 13px;
 }
+
 /*BoxImage*/
 .BoxImage {
     padding: 15px;
 }
+
 .BoxImage img {
     padding: 10px;
 }
+
 /*Watch*/
 .Watch {
     display: flex;
     padding: 25px 22px 0 45px;
 }
+
 .Watch button {
     width: 132px;
     height: 47px;
@@ -530,45 +597,56 @@ input {
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+.Watch button:focus {
+    outline: none;
+}
+
 .Watch .textWatch {
     text-align: left;
     margin-right: 10px;
 }
+
 .Watch .textWatch span {
     color: #00BA88;
     font-size: 18px;
 }
+
 .Watch .textWatch p {
     color: #6E7191;
     font-size: 18px;
 }
+
 /*WaffleCone*/
 .WaffleCone {
     width: 406px;
-    height: 500px;
+    /*height: 500px;*/
     border-radius: 32px;
     background: #FFFFFF;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
     text-align: left;
-    padding-top: 80px;
+    padding: 60px 0 80px;
     position: relative;
 }
+
 .WaffleCone .imgCream img {
     margin-left: 11px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
+
 .WaffleCone .textBox {
     margin-left: 50px;
 }
+
 .WaffleCone .textBox p {
     color: #4E4B66;
     font-size: 16px;
 }
-.WaffleCone .stepper {
-    position: absolute;
-    bottom: -40px;
-    left: 30px;
+
+.stepperTag {
+    display: flex;
 }
+
 .tag {
     width: 114px;
     height: 34px;
@@ -576,12 +654,12 @@ input {
     background: #DED3FF;
     display: flex;
     padding: 8px 16px;
-    position: absolute;
     bottom: -40px;
     right: 30px;
     color: #2A00A2;
     font-size: 13px;
 }
+
 .tag p {
     margin-left: 8px;
 }

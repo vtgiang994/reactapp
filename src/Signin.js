@@ -9,6 +9,7 @@ function SignIn() {
             <button className={"btnLogIn"}>
                 Log In
             </button>
+            {/*<input type="range" min="1" max="100" defaultValue={"50"}/>*/}
         </div>
     );
 }

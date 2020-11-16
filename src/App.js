@@ -12,7 +12,7 @@ function App() {
     };
     return (
         <section className="App" style={appStyle}>
-            <div className={"container-fluid"}>
+            <div className={"container"}>
                 <Page/>
             </div>
         </section>

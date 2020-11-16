@@ -38,9 +38,14 @@ function GroupCheckBox() {
                         <img src={toggle}/>
                     </div>
                 </div>
-                <img src={stepper}/>
+                <div>
+                    <img src={stepper}/>
+                </div>
             </div>
-            <img src={slider}/>
+            <div className="imgCheckbox">
+                <img src={slider}/>
+            </div>
+
         </div>
     );
 }

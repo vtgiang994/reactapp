@@ -15,7 +15,9 @@ function Sale() {
                 <p className={"p3"}>25% Off Now through sunday for all in-store purchases.</p>
                 <button>Shop Now</button>
             </div>
-            <img src={image}/>
+            <div>
+                <img src={image}/>
+            </div>
         </div>
     );
 }

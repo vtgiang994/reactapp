@@ -179,17 +179,20 @@ input {
 .Page {
     width: 100%;
     background: #F7F7FC;
-    padding: 85px 10px 100px 100px;
+    /*padding: 85px 10px 100px 100px;*/
     text-align: left;
 }
 .loginSale, .joinInCheckBox, .bottomPage, .boxAndImg {
-    display: flex;
+    /*display: flex;*/
     margin-top: 70px;
 }
-
+.row {
+    /*margin: 0;*/
+}
 /*login=========*/
 .login {
-    width: 405px;
+    /*width: 405px;*/
+    width: 100%;
     background: #FFFFFF;
     border-radius: 20px;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
@@ -212,19 +215,24 @@ input {
 .email {
     background: #EFF0F6;
     margin-top: 20px;
+    border: 1px solid #EFF0F6;
 }
 
 .passWord {
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.passWord:hover, .email:hover {
     border: 1px solid #5F2EEA;
 }
-
 .login .email input {
+    width: 95%;
     background: #EFF0F6;
     border: none;
 }
 
 .login .passWord input {
+    width: 100%;
     border: none;
 }
 
@@ -238,18 +246,22 @@ input {
 }
 
 .pass, .idEmail {
+    width: 100%;
     text-align: left;
     padding: 10px 0px;
 
 }
 
 .login button {
-    width: 269px;
+    width: 100%;
     height: 61px;
     border-radius: 16px;
     background: #5F2EEA;
     color: #FFFFFF;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login button:focus {
@@ -257,11 +269,25 @@ input {
 }
 
 /*Sale*/
+@media (min-width: 320px) and (max-width: 767px){
+    .sale {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        border-radius: 32px;
+        background: #FFFFFF;
+        /*padding: 66px 52px;*/
+        filter: drop-shadow(3px 3px 3px #BDBDBD);
+    }
+}
 .sale {
-    width: 709px;
+    /*width: 709px;*/
+    width: 100%;
     position: relative;
     display: flex;
-    flex-direction: row;
+    /*flex-direction: column-reverse;*/
     border-radius: 32px;
     background: #FFFFFF;
     padding: 66px 52px;
@@ -270,7 +296,7 @@ input {
 
 .textSale {
     text-align: left;
-    width: 240px;
+    width: 100%;
 }
 
 .sale .p2 {
@@ -282,23 +308,24 @@ input {
 }
 
 .sale button {
-    width: 135px;
+    width: 60%;
     height: 61px;
     font-size: 16px;
     border-radius: 40px;
     color: #5F2EEA;
-    border: gray 1px solid;
+    border: #D6D8E7 2px solid;
     background: #FFFFFF;
 
 }
 
 .sale img {
-    margin-left: 80px;
+    /*margin-left: 50px;*/
+    width: 100%;
 }
 
 /*Join in*/
 .joinIn {
-    width: 710px;
+    width: 100%;
     /*height: 345px;*/
     border-radius: 40px;
     border: none;
@@ -330,27 +357,33 @@ input {
     border-radius: 16px;
     border: none;
     margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputEmail {
-    width: 320px;
+    width: 95%;
     height: 61px;
     color: #FCFCFC;
     border: #D6D8E7 2px solid;
     border-radius: 16px;
     background: #FCFCFC;
     text-align: left;
+    display: flex;
+    padding: 12px 10px 12px 0;
 
 }
 
 .joinIn .inputEmail input {
     border: none;
     font-size: 16px;
-    background: #FFFFFF;
+    background: #FCFCFC;
+    width: 100%;
 }
 
 .joinIn .inputEmail img {
-    padding: 15px;
+    margin: 0 15px;
 }
 
 .inputButton {
@@ -364,7 +397,7 @@ input {
 
 /*Group Check Box*/
 .GroupCheckBox {
-    width: 406px;
+    width: 100%;
     /*height: 348px;*/
     border-radius: 32px;
     border: none;
@@ -400,10 +433,13 @@ input {
 .toggle .toggle2 {
     padding: 0 63px 0 17px;
 }
+.GroupCheckBox img {
+    width: 100%;
+}
 
 /*Selected*/
 .Selected {
-    width: 274px;
+    width: 100%;
     height: 100%;
     border-radius: 32px;
     border: none;
@@ -415,7 +451,7 @@ input {
 }
 
 .Select {
-    margin: 0 30px 20px;
+    margin: 0 20px 20px;
 }
 
 .textSelected {
@@ -431,7 +467,7 @@ input {
 font-size: 16px;
 }
 textarea {
-    width: 225px;
+    width: 100%;
     height: 128px;
     border-radius: 16px;
     background: #EFF0F7;
@@ -444,7 +480,7 @@ textarea {
 }
 
 .vegetables {
-    width: 225px;
+    width: 100%;
     height: 56px;
     border-radius: 15px;
     text-align: left;
@@ -455,7 +491,7 @@ textarea {
 }
 
 .vegetables1 {
-    width: 225px;
+    width: 100%;
     /*height: 56px;*/
     border-radius: 15px;
     text-align: left;
@@ -481,7 +517,7 @@ textarea {
 }
 
 .vegetable1Item {
-    width: 147px;
+    width: 40%;
     /*height: 204px;*/
     border-radius: 16px;
     background: #EFF0F6;
@@ -503,7 +539,7 @@ textarea {
 
 /*SearchEmail*/
 .SearchEmail {
-    width: 840px;
+    width: 100%;
     /*height: 122px;*/
     border-radius: 32px;
     border: none;
@@ -515,7 +551,7 @@ textarea {
 }
 
 .SearchEmail .Search {
-    width: 794px;
+    width: 100%;
     /*height: 64px;*/
     border-radius: 16px;
     background: #EFF0F6;
@@ -531,11 +567,23 @@ textarea {
     border: none;
     color: #14142B;
     font-size: 16px;
+    width: 70%;
 }
-
+.Configure {
+    position: absolute;
+    width: 120px;
+    height: 64px;
+    border-radius: 16px;
+    border: 2px solid #D6D8E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 23px;
+    top: 28px;
+}
 /*SignIn and BoxImage*/
 .SignIn, .BoxImage, .Watch {
-    width: 375px;
+    width: 100%;
     /*height: 124px;*/
     border-radius: 32px;
     background: #FFFFFF;
@@ -546,11 +594,12 @@ textarea {
 
 .SignIn {
     padding: 31px 22px;
+    display: flex;
 }
 
 .SignIn button {
-    width: 153px;
-    height: 61px;
+    width: 100%;
+    height: 58px;
     border-radius: 16px;
     font-size: 16px;
 }
@@ -569,7 +618,7 @@ textarea {
     background: #FFFFFF;
     color: #5F2EEA;
     border: 2px #5F2EEA solid;
-    margin-left: 13px;
+    /*margin-left: 13px;*/
 }
 
 /*BoxImage*/
@@ -583,12 +632,14 @@ textarea {
 
 /*Watch*/
 .Watch {
+    /*display: flex;*/
+    padding: 20px;
+    text-align: center ;
     display: flex;
-    padding: 25px 22px 0 45px;
 }
 
 .Watch button {
-    width: 132px;
+    width: 100%;
     height: 47px;
     border-radius: 40px;
     border: #5F2EEA 2px solid;
@@ -619,17 +670,17 @@ textarea {
 
 /*WaffleCone*/
 .WaffleCone {
-    width: 406px;
+    width: 100%;
     /*height: 500px;*/
     border-radius: 32px;
     background: #FFFFFF;
     filter: drop-shadow(3px 3px 3px #BDBDBD);
     text-align: left;
     padding: 60px 0 80px;
-    position: relative;
 }
 
 .WaffleCone .imgCream img {
+    width: 100%;
     margin-left: 11px;
     margin-bottom: 30px;
 }
@@ -645,19 +696,23 @@ textarea {
 
 .stepperTag {
     display: flex;
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 10px;
+    position: relative;
 }
 
 .tag {
-    width: 114px;
+    width: 40%;
     height: 34px;
     border-radius: 39px;
     background: #DED3FF;
     display: flex;
     padding: 8px 16px;
-    bottom: -40px;
-    right: 30px;
     color: #2A00A2;
     font-size: 13px;
+    position: absolute;
+    right: 0;
 }
 
 .tag p {

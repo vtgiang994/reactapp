@@ -16,7 +16,10 @@ function WaffleCone() {
                 </div>
             </div>
             <div className={"stepperTag"}>
+                <div>
                     <img src={stepper}/>
+                </div>
+
                 <div className={"tag"}>
                     <img src={Tag}/>
                     <p>Dessert</p>

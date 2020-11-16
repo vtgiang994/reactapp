@@ -8,6 +8,8 @@ function SearchEmail() {
             <div className={"Search"}>
                 <img src={Search}/>
                 <input type={"text"} name={"Search"} placeholder={"Ca"}/>
+            </div>
+            <div className={"Configure"}>
                 <img src={Configure}/>
             </div>
         </div>

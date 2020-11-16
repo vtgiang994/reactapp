@@ -21,27 +21,45 @@ function Page() {
                     Widgets
                 </h1>
             </div>
-            <div className={"loginSale"}>
-                <Login/>
-                <Sale/>
+            <div className={"loginSale row"}>
+                <div className="col-xs-12 col-md-6">
+                    <Login/>
+                </div>
+                <div className="col-xs-12 col-md-6">
+                    <Sale/>
+                </div>
             </div>
-            <div className={"joinInCheckBox"}>
-                <JoinIn/>
-                <GroupCheckBox/>
+            <div className={"joinInCheckBox row"}>
+                <div className="col-xs-12 col-md-6">
+                    <JoinIn/>
+                </div>
+                <div className="col-xs-12 col-md-6">
+                    <GroupCheckBox/>
+                </div>
             </div>
-            <div className={"bottomPage"}>
-                <Selected/>
-                <div className={"bottomLeftPage"}>
-                    <div className="inputSearch">
+            <div className={"bottomPage row"}>
+                <div className="col-xs-12 col-md-4">
+                    <Selected/>
+                </div>
+                <div className={"bottomLeftPage col-xs-12 col-md-8"}>
+                    <div className="inputSearch col-xs-12 col-md-12">
                         <SearchEmail/>
                     </div>
-                    <div className={"boxAndImg"}>
-                        <div className={"BoxBox"}>
-                            <Watch/>
-                            <SignIn/>
-                            <BoxImage/>
+                    <div className={"boxAndImg row"}>
+                        <div className={"BoxBox col-xs-12 col-md-6"}>
+                            <div>
+                                <Watch/>
+                            </div>
+                            <div>
+                                <SignIn/>
+                            </div>
+                            <div>
+                                <BoxImage/>
+                            </div>
                         </div>
-                        <WaffleCone/>
+                        <div className="col-xs-12 col-md-6">
+                            <WaffleCone/>
+                        </div>
                     </div>
                 </div>
             </div>
